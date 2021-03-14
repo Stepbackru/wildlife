@@ -44,6 +44,7 @@ ul {
 }
 .header {
   max-width: 100%;
+  background: #02160b;
 }
 .header__row {
   position: relative;
