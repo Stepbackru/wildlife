@@ -83,6 +83,13 @@ ul {
 .menu__item:not(:last-child) {
   margin-right: 66px;
 }
+.menu__item {
+  opacity: .75;
+}
+.menu__item:hover {
+  opacity: 1;
+  transition: opacity .2s;
+}
 .menu__link {
   display: block;
   color: var(--font-light);
