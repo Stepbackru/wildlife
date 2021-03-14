@@ -42,6 +42,52 @@
         </div>
       </div>
     </div>
+    <section class="articles">
+      <div class="wrapper">
+        <h2 class="articles__caption">Latest articles</h2>
+        <p class="articles__subcaption">Breaking news from the wild</p>
+        <div class="slider">
+          <button class="slider__arrow slider__arrow-left">
+            <img src="./assets/images/arrow.svg" alt="Arrow to left in slider">
+          </button>
+          <div class="slider__content">
+            <section class="slider__card">
+              <div class="slider__photo">
+                <img class="slider__image" src="./assets/images/deer.jpg" alt="deer photo">
+              </div>
+              <h4 class="slider__name">Deer</h4>
+              <p class="slider__description">Naturalist investigation</p>
+            </section>
+            <section class="slider__card">
+              <div class="slider__photo">
+                <img class="slider__image" src="./assets/images/squirrel.jpg" alt="squirrel photo">
+              </div>
+              <h4 class="slider__name">Squirrel</h4>
+              <p class="slider__description">Kamikaze squirrels</p>
+            </section>
+            <section class="slider__card">
+              <div class="slider__photo">
+                <img class="slider__image" src="./assets/images/bird.jpg" alt="bird photo">
+              </div>
+              <h4 class="slider__name">Bird</h4>
+              <p class="slider__description">Birds Fight club</p>
+            </section>
+          </div>
+          <button class="slider__arrow slider__arrow-right">
+            <img src="./assets/images/arrow.svg" alt="Arrow to right in slider">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="notified">
+      <div class="wrapper">
+        <h3 class="notified__caption">Get notified about new amazing articles</h3>
+        <form class="form" action="#" method="get">
+          <input class="form__input" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+          <input class="form__submit" type="submit" value="Send">
+        </form>
+      </div>
+    </section>
   </main>
 </body>
 </html>
