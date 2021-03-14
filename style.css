@@ -10,6 +10,7 @@
   --font-light: #F7F7F7;
   --orange-main:  #CD6326;
   --orange-dark: #8F5613;
+  --header-bg: #02160b;
 }
 html {
   scroll-behavior: smooth;
@@ -42,9 +43,9 @@ ul {
   max-width: 1440px;
   overflow: hidden;
 }
-.header {
+.header, .survival {
   max-width: 100%;
-  background: #02160b;
+  background: var(--header-bg);
 }
 .header__row {
   position: relative;
@@ -122,4 +123,23 @@ ul {
 }
 .sign-in > .menu__link:active {
   background: var(--orange-dark);
+}
+.main {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.survival {
+  height: 697px;
+}
+.survival__bg {
+  width: 1440px;
+  height: 780px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  background-image: url(./assets/images/survivalbg.jpg);
+  background-repeat: no-repeat;
 }
