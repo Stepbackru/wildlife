@@ -25,7 +25,7 @@ html, body {
 body {
   font-family: Roboto, sans-serif;
 }
-body, ul, h1, h2, h4, p {
+body, ul, h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
 }
@@ -277,4 +277,43 @@ ul {
   font-size: 17px;
   font-weight: 400;
   text-align: center;
+}
+.notified {
+  padding-bottom: 240px;
+  max-height: 640px;
+}
+.notified__caption {
+  padding: 241px 0 61px;
+  color: var(--font-dark);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  text-align: center;
+}
+.form {
+  margin: 0 auto;
+  width: 660px;
+  height: 61px;
+  display: flex;
+}
+.form__input {
+  padding-left: 15px;
+  width: 540px;
+  height: 100%;
+  outline: none;
+  border: 1px var(--font-grey) solid;
+  border-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.form__input::placeholder, .form__input {
+  color: var(--font-grey);
+  font-size: 23px;
+  font-weight: 400;
+}
+.form__submit {
+  width: 120px;
+  height: 100%;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
