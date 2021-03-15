@@ -12,6 +12,9 @@
   --orange-dark: #8F5613;
   --header-bg: #02160b;
   --orange-light: #E39128;
+  --artnot-bg: #cccccc;
+  --font-dark: #333333;
+  --font-grey: #666666;
 }
 html {
   scroll-behavior: smooth;
@@ -22,7 +25,7 @@ html, body {
 body {
   font-family: Roboto, sans-serif;
 }
-body, ul, h1, h2, p {
+body, ul, h1, h2, h4, p {
   margin: 0;
   padding: 0;
 }
@@ -186,4 +189,92 @@ ul {
   margin-top: 48px;
   width: 160px;
   height: 60px;
+}
+.articles {
+  max-height: 728px;
+}
+.articles, .notified {
+  background: var(--artnot-bg);
+}
+.articles__caption {
+  color: var(--font-dark);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  padding: 124px 0 24px;
+}
+.articles__subcaption {
+  padding-bottom: 122px;
+  color: var(--font-grey);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.slider {
+  max-width: 100%;
+  max-height: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider__arrow {
+  padding: 7px 2px 0;
+  max-width: 30px;
+  max-height: 70px;
+  border: none;
+  outline: none;
+  background: none;
+  opacity: .75;
+}
+.slider__arrow:hover {
+  opacity: 1;
+  transition: .2s;
+}
+.slider__arrow-right {
+  padding: 0 2px 0;
+  transform: rotate(180deg);
+}
+.slider__content {
+  max-width: 1020px;
+  max-height: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+.slider__card:nth-child(2n) {
+  margin: 0 60px;
+}
+.slider__card {
+  max-width: 300px;
+  max-height: 360px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.slider__photo {
+  max-width: 300px;
+  max-height: 360px;
+}
+.slider__name {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  color: var(--font-light);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+.slider__description {
+  width: 186px;
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  color: var(--font-light);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
 }
