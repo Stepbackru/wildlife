@@ -15,6 +15,7 @@
   --artnot-bg: #cccccc;
   --font-dark: #333333;
   --font-grey: #666666;
+  --footer-bg: #181617;
 }
 html {
   scroll-behavior: smooth;
@@ -316,4 +317,27 @@ ul {
   height: 100%;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+}
+.footer {
+  max-height: 360px;
+  background: var(--footer-bg);
+}
+.footer > .wrapper {
+  background-image: url(./assets/images/footer-bg.jpg);
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 0;
+  width: 1200px;
+  height: 60px;
+}
+.footer__row > .menu {
+  width: 480px;
+  height: 100%;
+  line-height: 60px;
+}
+.socials {
+  width: 240px;
+  height: 40px;
 }
