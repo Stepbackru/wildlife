@@ -372,3 +372,19 @@ ul {
 .socials__item:hover {
   opacity: 1;
 }
+.link-fb {
+  background-image: url(./assets/images/fb.svg);
+}
+.link-inst {
+  background-image: url(./assets/images/inst.svg);
+}
+.link-pint {
+  background-image: url(./assets/images/pint.svg);
+}
+.link-teleg {
+  background-image: url(./assets/images/teleg.svg);
+}
+.link-fb, .link-inst, .link-pint, .link-teleg {
+  background-repeat: no-repeat;
+  background-position: center;
+}
