@@ -129,6 +129,9 @@ ul {
   background-image: url(./assets/images/search_icon.svg);
   background-repeat: no-repeat;
 }
+.search:hover {
+  cursor: pointer;
+}
 .menu__link {
   width: 100%;
   height: 100%;
